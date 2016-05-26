@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tattoo</title>
+  
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="navbar-brand"> <%= link_to "Home" ,root_path %> </ul>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+
+        <li class="active"><%= link_to "About Us",about_path %> <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+    	<li> <%= link_to "Artists" ,artists_path %> </li>
+   
+
+       </ul> 
+
+      
+      
+
+    <h3 class="navname"> Gulf Coast Pro Tattoo </h3>        
+
+</div>
+
+</div>
+
+     </nav> 
+    
+
+
+
+
+
+<div id="container">
+<%= yield %>
+</div>
+</body>
+</html>

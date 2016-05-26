@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
+ @import 'font-awesome';
+
+body    {	background: image-url("background.jpeg") center center no-repeat fixed;
+	   		background-size: cover;
+
+}
+
+.banner {	margin-left: auto;
+		  	margin-right: auto;
+		  	display: block;
+}
+.thumb  { 	margin-left: auto;
+		  	margin-right: auto;
+		  	display: block;
+}
+h3 { 		text-align: center;
+}	
+
+
+.intro { 	width:40%;
+
+	}	  	
+
+.img-responsive {
+			width: 20%;
+			position: inline;
+}	
+
+.navname {  font-family: 'Rock Salt', cursive;
+			color:white;
+			text-align: center !important; 
+			display: inline-block;
+			padding-left: 40%;
+}		
+
+
+.panelimage {
+			width:100%;
+}
+
+.panel { 	
+			width:25%;
+			border: none !important;
+			background:rgba(255,255,255,0.4);
+
+}
+.panel-footer { background-color:black !important;}
+
+.admin > div {
+			margin-top: 40%;
+		    display: inline-block;
+  			vertical-align: top;
+  			margin-right: 1em;
+  			
+}
+.admin {	text-align: center;
+}
+
+.modals { 	font-size: 15px;
+			color:white;
+			font-family: 'Rock Salt', cursive;
+}
+.modal-content {background:orange;}
+
